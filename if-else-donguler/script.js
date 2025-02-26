@@ -246,8 +246,247 @@
 
 
 
+// Yapay zeka testini yapıyorum simdi.
+
+
+//1. soru:
+// console.log(5 == "5");  // true (JavaScript, string olan "5"i otomatik olarak sayıya çevirir)
+// console.log(5 === "5"); // false (Biri number, biri string olduğu için eşit değil)
+// 🔹 Soru: 5 == "5" neden true döndü? Açıkla.
+
+
+// bence dönmesinin temel sebebi 5 sayısını yazı olarak değil harf olarak dönüştürdüğü için 5 ile eşleşiyor
+// bu yüzden de ture cıkıyor. 
+
+//2. soru 
+// let yas = 18;
+// let mesaj = (yas >= 18) ? "Ehliyet alabilirsiniz" : "Ehliyet alamazsınız";
+// console.log(mesaj);
+// 🔹 Soru: Yukarıdaki kod if-else ile nasıl yazılırdı? Yaz ve açıkla.
+
+
+// let yas = 18;
+
+// if(yas>=18){
+//     console.log("ehliyet alabilirsniz")
+// }else{
+//     console.log("ehliyet alamazsınız")
+// }
+
+// Burada ilk başta yaş değerine 18 sayısını atadım. 
+
+// Sonrasında eğer yaş 18 eşit büyükse consola ehliyet alabilir yazdırdım
+// aksi halde değilse ehliyet alamazsınız yazdırdım. 
+
+// 3. soru:
+// let kullaniciAdi = "admin";
+// let sifre = "1234";
+
+// if (kullaniciAdi === "admin") {
+//     if (sifre === "1234") {
+//         console.log("Giriş başarılı");
+//     } else {
+//         console.log("Hatalı şifre!");
+//     }
+// } else {
+//     console.log("Böyle bir kullanıcı yok!");
+// }
+// 🔹 Soru: Eğer kullaniciAdi yanlışsa şifre kontrolü yapılmalı mı? Açıkla.
+
+
+// evet sifre kontrolü yapılmalı çünkü kullanıcı adı yanlış dense bile
+// sifrenin doğru olup olmadığını belirtmemek kullanıcı için doğru varsayımına
+// yönelmesine yol açabilir. Eğer bu da hatalıysa özellikle sınırlı giriş haklarında
+// sıkıntı oluşturacak bir duruma dönüşür. 
+
+//4. soru
+// let gun = "Çarşamba";
+
+// switch (gun) {
+//     case "Pazartesi":
+//     case "Salı":
+//     case "Çarşamba":
+//     case "Perşembe":
+//     case "Cuma":
+//         console.log("Hafta içi");
+//         break;
+//     case "Cumartesi":
+//     case "Pazar":
+//         console.log("Hafta sonu");
+//         break;
+//     default:
+//         console.log("Geçersiz gün!");
+// }
+// 🔹 Soru: switch-case yerine if-else ile nasıl yazılır?
 
 
 
-// YARIN ÖĞRETİCİ REHBERİ BİTİR
 
+// let gun= "salı";
+
+// if(gun === "pazartesi"){
+//    console.log("hafta içi");
+// } 
+// else if(gun === "salı"){
+//     console.log("hafta içi");
+//  }
+//  else if(gun === "carsamba"){
+//     console.log("hafta içi");
+//  } 
+//  else if(gun === "persembe"){
+//     console.log("hafta içi");
+//  } 
+//  else if(gun === "cuma"){
+//     console.log("hafta içi");
+//  }
+//  else if(gun === "cumartesi"){
+//     console.log("haftasonu");
+//  } 
+//  else if(gun === "pazar"){
+//     console.log("haftasonu");
+//  } 
+//  else{
+//     console.log("böyle bir gün yok");
+//  }
+
+// 5. soru
+// let sicaklik = 25;
+// let yagmurVar = false;
+
+// if (sicaklik > 20 && yagmurVar === false) {
+//     console.log("Hava güzel, dışarı çıkabilirsin!");
+// }
+// || (veya) operatörü burada nasıl kullanılırdı
+
+// burada veya operatörü sicaklik>20 den sonra || şeklinde kullanılarak
+// sicaklık 20 üstündeyse ya da yağmur yoksa hava güzel dışarı cıkabilrisin 
+// sonucu verebilirdi.
+
+// AŞAMA2 Uygulama
+
+// Problem 1
+// Not Hesaplama 
+
+// let not1=20;
+// let not2= 90;
+// let not3=100;
+// ortalama=(not1+not2+not3)/3;
+
+// if(ortalama>=90)
+// {
+//     console.log("tebrikler notunuz AA");
+// }
+// else if(ortalama>=80){
+//     console.log("tebrikler notunuz BB");
+// }
+// else if(ortalama>=70){
+//     console.log("tebrikler notunuz CC");
+// }
+// else if(ortalama>=60){
+//     console.log("tebrikler notunuz DD");
+// }
+// else if(ortalama<=59){
+//     console.log("malesef kaldınız.");
+// }
+// else
+// {
+//     console.log("Geçersiz bir not girdiniz.");
+// }
+
+// Burada 3 not bekledim sornasında bunların ortalamasını aldım ortalamaya göre
+// senin verdiğin not aralardında if, else if ve else kullanarak not hesaplama
+// yapımı kullandım. 
+
+// Problem 2 
+// Hava Durumu Tavsiyesi
+// let sicaklik=15;
+// let yagmur = false;
+
+// if(sicaklik>=25 && yagmur === false){
+//     console.log("dışarı çıkabilirsin.");
+// }
+//  else if(sicaklik>=10){
+//      console.log("hava serin, dikat et");
+//  }
+// else if(sicaklik<10 || yagmur === true)
+// {
+//     console.log("hava soğuk evde kal");
+// }
+// else{
+// console.log("böyle bir şey yok");
+// }
+
+// Burada sicaklık ve yagmur değerlerimi belirledim ardından if, else if kullanarak
+// senin dediğin şekilde kodlamasını yaptım ilk if'te sicaklık 25 eşit ve üstüyse ve yağmur yoksa
+// dışarı cıkabilir eğer sicaklık 10 ve üstüyse hava serin... eğer sicaklık 10 altındaysa ve yağmurda 
+// varsa hava serin evde kal ya da böyle bir şey yok. yazdırırım. 
+
+
+// Problem 3 
+// Kullanıcı Girişi
+// let kullaniciad = "admin";
+// let sifre= "1234";
+
+// if(kullaniciad === "admin")
+// {   
+//  if(sifre ==="1234")
+//     {
+//     console.log("Hoş geldiniz!");
+//     }
+//     else{
+//         console.log("fre yanlış!");
+//     }
+
+// } else{
+//     console.log("Böyle bir kullanıcı yok");
+// } 
+
+// Sana soru
+
+// if ve else yapısını kullanarak en karmaşık ve en zor yapıyı yaz. Sonrasında bunu en ayrıntılı şekilde açıkla
+// Ayrıca bu öğretici sınav tarzında olan çalışmayı sevdim bunu kaydetmeni ve diğer konularda 
+// alıştırma yaparken bana bu tarzda eksikliklerimi açıklamanı isterim. 
+// Sorumu yanıtlamdan önce beni iyice değerlendir ayrıntılı bir değerlendirme 
+// yapmanı istiyorum. 
+
+
+
+// ZOR if else bloğu: 
+
+// let yas = 25;
+// let krediSkoru = 750;
+// let gelir = 4000;
+// let borc = 2000;
+
+// if (yas >= 18) {  
+//     if (krediSkoru >= 700) {  
+//         if (gelir - borc >= 3000) {  
+//             console.log("Tebrikler, yüksek limitli kredi alabilirsiniz!");
+//         } else if (gelir - borc >= 1000) {  
+//             console.log("Düşük limitli kredi alabilirsiniz.");
+//         } else {  
+//             console.log("Geliriniz yetersiz, kredi alamazsınız.");
+//         }
+//     } else if (krediSkoru >= 500) {  
+//         if (gelir - borc >= 3000) {  
+//             console.log("Orta limitli kredi alabilirsiniz.");
+//         } else {  
+//             console.log("Kredi puanınız düşük, ancak geliriniz uygunsa düşük limitli kredi alabilirsiniz.");
+//         }
+//     } else {  
+//         console.log("Kredi puanınız çok düşük, kredi alamazsınız.");
+//     }
+// } else {  
+//     console.log("18 yaşından küçük olduğunuz için kredi alamazsınız.");
+// }
+
+
+// 📖 Kod Açıklaması (Detaylı Anlatım)
+
+// 1️⃣ Yaş Kontrolü: Eğer 18 yaşından küçükse, kredi başvurusu reddedilir.
+// 2️⃣ Kredi Skoru Kontrolü: Eğer 700 ve üzeriyse, yüksek kredi alma ihtimali var.
+// 3️⃣ Gelir ve Borç Durumu: Kullanıcının net geliri hesaplanıyor ve ona göre farklı kredi limitleri sunuluyor.
+// 4️⃣ Daha Düşük Kredi Skoru İçin Ayrı Kontrol: Kredi skoru 500-700 arasındaysa gelir durumuna göre alternatif krediler öneriliyor.
+// 5️⃣ Eğer Kredi Skoru 500'den Düşükse: Kesinlikle kredi verilmiyor.
+
+// Bu yapı hem iç içe geçmiş if-else bloklarını hem de birden fazla değişkenin aynı anda değerlendirilmesini içerdiği için oldukça karmaşıktır. Gerçek hayatta bir bankacılık uygulaması gibi düşünebilirsin.
