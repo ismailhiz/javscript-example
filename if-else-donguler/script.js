@@ -489,4 +489,7 @@
 // 4️⃣ Daha Düşük Kredi Skoru İçin Ayrı Kontrol: Kredi skoru 500-700 arasındaysa gelir durumuna göre alternatif krediler öneriliyor.
 // 5️⃣ Eğer Kredi Skoru 500'den Düşükse: Kesinlikle kredi verilmiyor.
 
-// Bu yapı hem iç içe geçmiş if-else bloklarını hem de birden fazla değişkenin aynı anda değerlendirilmesini içerdiği için oldukça karmaşıktır. Gerçek hayatta bir bankacılık uygulaması gibi düşünebilirsin.
+// Bu yapı hem iç içe geçmiş if-else bloklarını hem de birden fazla değişkenin aynı anda değerlendirilmesini içerdiği için oldukça karmaşıktır. Gerçek hayatta bir bankacılık uygulaması gibi düşünebilirsin. 
+
+
+
